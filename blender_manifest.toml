@@ -1,0 +1,23 @@
+schema_version = "1.0.0"
+
+id = "auto_switch_theme"
+version = "1.0.1"
+name = "Auto Switch Theme"
+tagline = "Set light and dark themes based on your system appearance"
+maintainer = "Pablo Vazquez <pablo@blender.org>"
+type = "add-on"
+tags = ["User Interface"]
+blender_version_min = "4.2.0"
+
+website = "https://github.com/venomgfx/auto-switch-theme"
+
+license = [
+  "SPDX:GPL-2.0-or-later",
+]
+
+wheels = [
+  "./wheels/darkdetect-0.8.0-py3-none-any.whl",
+]
+
+[permissions]
+files = "Read existing themes from disk"
